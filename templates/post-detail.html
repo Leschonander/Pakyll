@@ -1,0 +1,13 @@
+{% extends "baseTemplate.html" %}
+
+{% block content %}
+
+<section class="header">
+  <h1>{{post.title}}</h1>
+  <small>{{post.author}}</small>
+  <small>{{post.date}}</small>
+</section>
+
+{{post.content}}
+
+{% endblock %}
